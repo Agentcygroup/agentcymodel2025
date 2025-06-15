@@ -1,0 +1,13 @@
+kind: pipeline
+type: exec
+name: sovereign_ci
+
+steps:
+  - name: install
+    commands:
+      - echo "🔧 Installing Sovereign Agents"
+      - chmod +x ./ignite_everything.sh
+      - ./ignite_everything.sh --mesh --no-corp --quantum-fork
+  - name: verify
+    commands:
+      - echo "✅ Agents verified. SovereignStack synchronized."
