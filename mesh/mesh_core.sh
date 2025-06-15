@@ -1,0 +1,1 @@
+echo "🌐 Sovereign Mesh Online"
